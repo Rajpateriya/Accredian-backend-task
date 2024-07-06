@@ -21,8 +21,12 @@ const sendReferralEmail = async (referrerEmail, refereeEmail) => {
   const mailOptions = {
     from: process.env.GMAIL_USER,
     to: refereeEmail,
-    subject: 'You have been referred!',
-    text: `Hello! You have been referred by ${referrerEmail}. Check out this great course!`,
+    subject: 'You have been referred by your friend !',
+    text: `Hello! You have been referred by ${referrerEmail}. 
+    This email is for general purpose of testing the gmail service !
+    This is for general fun!!
+    thanks........
+    Have a great day..`,
   };
 
   await transporter.sendMail(mailOptions);
