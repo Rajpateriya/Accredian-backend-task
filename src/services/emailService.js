@@ -24,7 +24,7 @@ const sendReferralEmail = async (referrerEmail, refereeEmail) => {
     subject: 'You have been referred by your friend !',
     text: `Hello! You have been referred by ${referrerEmail}. 
     This email is for general purpose of testing the gmail service !
-    This is for general fun!!
+    This is for fun!!
     thanks........
     Have a great day..`,
   };
