@@ -22,7 +22,7 @@ const createReferral = async (req, res) => {
 
     return res.status(201).json(referral);
   } catch (error) {
-    console.log(error)
+    console.error('Error creating referral:', error);
     return res.status(500).json({ error: 'Internal server error' });
   }
 };
